@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="./scss/styles.scss" /> -->
+        <!-- <script src="https://kit.fontawesome.com/753d009a2f.js" crossorigin="anonymous"></script> -->
+        <link rel="icon" href="./assets/sass-icon.webp" />
+        <script defer src="./scripts/app.js"></script>
+        <title>SCSS Documentation</title>
+    </head>
+    <body>
+        <nav class="navigation">
+            <header>
+                <a href="/"
+                    ><img
+                        title="Syntactically Awesome Style Sheets"
+                        class="navigation__logo"
+                        src="./assets/sass.png"
+                        alt="SASS logo"
+                /></a>
+            </header>
+            <h1 name="sass-language" class="navigation__title">
+                <span class="navigation__indent">S</span>yntactically <span class="navigation__indent">A</span>wesome
+                <span class="navigation__indent">S</span>tyle <span class="navigation__indent">S</span>heets
+            </h1>
+            <input id="navigation__checkbox" aria-hidden="true" type="checkbox" />
+            <label aria-label="navigation-button" class="navigation__menu" for="navigation__checkbox">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </nav>
+        <main class="welcome-page">
+            <article class="welcome-content">
+                <header>
+                    <h1 class="welcome-content__title">SASS is preprocessor for CSS</h1>
+                    <h2 class="welcome-content__subtitle">Which allow writing less code in more condense way</h2>
+                </header>
+                <section class="code-workspaces">
+                    <section class="code-workspace">
+                        <header class="code-workspace__header">
+                            <span class="code-workspace__controls"><i class="fa-solid fa-angle-left"></i></span>
+                            <h1 class="code-workspace__title">CSS Code</h1>
+                            <span class="code-workspace__controls"><i class="fa-solid fa-angle-right"></i></span>
+                        </header>
+                        <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28215%2C215%2C215%2C0%29&t=seti&wt=none&l=css&width=869&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=17.5px&lh=133%25&si=false&es=1x&wm=false" scrollin="no"
+  style="height: 488px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                        <div class="code-workspace__code-lines">
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">1</span>
+                                <p class="code-workspace__code code-workspace__code_selector">.parent <span style="color: rgb(231, 231, 231)">{</span></p>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">2</span>
+                                <p class="code-workspace__code code-workspace__code_property">display: <span style="color: #fff;">flex</span>;</p>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">3</span>
+                                <p class="code-workspace__code code-workspace__code_property">justify-content: <span style="color: #fff;">center</span>;</p>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">4</span>
+                                <p class="code-workspace__code code-workspace__code_property">margin-bottom: <span style="color: #fff;">2rem</span>;</p>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">5</span>
+                                <p class="code-workspace__code code-workspace__code_property">font-size: <span style="color: #fff;">1.4rem</span>;</p>
+                                
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">6</span>
+                                <p class="code-workspace__code code-workspace__code_selector"><span style="color: #fff;">}</span></p>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">7</span>
+                                <p class="code-workspace__code code-workspace__code_selector">.parent .button <span style="color: rgb(231, 231, 231)">{</span></p>
+                                
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">7</span>
+                                <p class="code-workspace__code code-workspace__code_property">background: <span style="color: #fff;">#f00</span>;</p>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">8</span>
+                                <p class="code-workspace__code code-workspace__code_property">padding: <span style="color: #fff;">1rem 2rem</span>;</p>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">9</span>
+                                <p class="code-workspace__code code-workspace__code_property">cursor: <span style="color: #fff;">pointer</span>;</p>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">10</span>
+                                <p class="code-workspace__code code-workspace__code_property code-workspace__code_two-digits">color: <span style="color: #fff;">#222</span>;</p>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">11</span>
+                                <p class="code-workspace__code code-workspace__code_property ">border-radius: <span style="color: #fff;">.5rem</span>;</p>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">12</span>
+                                <p class="code-workspace__code code-workspace__code_selector"><span style="color: #fff;">}</span></p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="code-workspace">
+                        <h1 class="code-workspace__title code-workspace__title_sass">SASS Code</h1>
+                        <div class="code-workspace__code-lines">
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">1</span>
+                                <p class="code-workspace__code code-workspace__code_selector">.parent <span style="color: rgb(231, 231, 231)">{</span></p>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">2</span>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">3</span>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">4</span>
+
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">5</span>
+
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">6</span>
+
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">7</span>
+
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">8</span>
+
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">9</span>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">10</span>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">11</span>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">12</span>
+                            </div>
+                            <div class="code-workspace__code-line">
+                                <span class="code-workspace__line-number">13</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </article>
+            <aside class="aside-nav">
+                <ul class="aside-nav__list">
+                    <li>
+                        <a class="aside-nav__link aside-nav__link_title" href="#">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            SASS</a
+                        >
+                        <ul class="aside-nav__list aside-nav__list_expand">
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Overview</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">SASS vs SCSS Syntax</a>
+                            </li>
+                            <li>
+                                <a href="#" class="aside-nav__link">Compiling SASS to CSS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="aside-nav__link" href="#"><i class="fa-solid fa-chevron-right"></i> Compiling SASS</a>
+                    </li>
+                    <li>
+                        <a class="aside-nav__link" href="#"><i class="fa-solid fa-chevron-right"></i> Variables</a>
+                    </li>
+                    <li>
+                        <a class="aside-nav__link aside-nav__link_title" href="#"><i class="fa-solid fa-chevron-right"></i> Nesting</a>
+                        <ul class="aside-nav__list aside-nav__list_expand">
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Overview</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">SASS vs SCSS Syntax</a>
+                            </li>
+                            <li>
+                                <a href="#" class="aside-nav__link">Compiling SASS to CSS</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </main>
+    </body>
+</html>
