@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "parcel src/index.html"
+    "build:dev": "parcel src/index.html",
+    "build:prod": "parcel build src/index.html"
   },
   "author": "",
   "license": "ISC",
