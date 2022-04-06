@@ -8,15 +8,15 @@ menuBtn.addEventListener('click', () => {
     menuNav.classList.toggle('active')
 });
 
-// menuHeader.addEventListener('click', () => {
-//     menuHeader.classList.toggle('active');
-//     hiddenMenu.classList.toggle('show');
-// });
+menuHeader.addEventListener('click', () => {
+    menuHeader.classList.toggle('active');
+    hiddenMenu.classList.toggle('show');
+});
 
-// contentsTitle.addEventListener('click', e => {
-//     e.forEach((element) => {
-//         element.addEventListener('click', listExpand());
-//     });
-// })
+contentsTitle.addEventListener('click', e => {
+    e.forEach((element) => {
+        element.addEventListener('click', listExpand());
+    });
+})
 
 

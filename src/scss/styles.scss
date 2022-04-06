@@ -118,6 +118,7 @@ body {
     margin-top: 50px;
     gap: 20px;
     display: flex;
+    justify-content: center;
     padding: 0 10px;
     @media (max-width: 850px) {
         & {
@@ -125,8 +126,6 @@ body {
         }
     }
     .welcome-content {
-        max-width: 95%;
-        margin: 0 auto;
         box-shadow: 0 0 100px rgb(238, 238, 238);
         min-height: 80vh;
         border-radius: 1.3rem;
@@ -146,11 +145,11 @@ body {
         }
         .code-workspaces {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             min-height: 350px;
-            max-width: 90%;
             margin: 50px auto 0 auto;
-            gap: 40px;
+            padding: 0 10px;
+            gap: 20px;
             .code-workspace {
                 animation: workspaceOriginate 1s ease forwards;
                 border: 2px solid colors.$dark-grey;
@@ -164,8 +163,20 @@ body {
                 opacity: .4;
                 display: flex;
                 flex-direction: column;
+                &__iframe {
+                    flex-grow: 1;
+                    min-height: 450px;
+                    min-width: 100%; 
+                    border: 0;  
+                    overflow-y: hidden;
+                }
                 &__snippet {
                     width: 100%;
+                }
+                &__img {
+                    object-fit: contain;
+                    max-width: 80%;
+                    margin: 0 auto;
                 }
                 &__header {
                     display: flex;
@@ -250,8 +261,8 @@ body {
         }
         @media (max-width: 850px) {
             & {
-                width: 100% !important;
                 transform-origin: top;
+                width: 100% !important;
             }
             &.active {
                 max-height: 0;
