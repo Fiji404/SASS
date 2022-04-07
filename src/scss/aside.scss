@@ -1,0 +1,74 @@
+@use 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+.aside-nav {
+    box-shadow: 0 0 20px rgb(238, 238, 238);
+    border-radius: 1.3rem 0 0 1.3rem;
+    width: 0;
+    overflow: hidden;
+    transition: 300ms ease;
+    padding: 20px;
+    transform: translateX(45px);
+    &.active {
+        width: 30%;
+        transform: translateX(0);
+
+    }
+    &__header-btn {
+        background-color: transparent;
+        border: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.35rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        margin-bottom: 15px;
+        cursor: text;
+        &.active .fa-chevron-right {
+            transform: rotate(.25turn);
+        }
+    }
+    @media (max-width: 850px) {
+        & {
+            width: 100% !important;
+            transform-origin: top;
+            height: 0;
+            transform: scaleY(0);
+        }
+        &.active {
+            height: auto;
+            transform: scaleY(1);
+        }
+    }
+    &__list {
+        list-style: none;
+        &_expand {
+            transform: scaleY(0);
+            height: 0;
+            padding-left: 30px;
+            transition: 100ms;
+            transform-origin: top;
+            margin-bottom: 10px;
+            &.show {
+                height: auto;
+                transform: scaleY(1);
+            }
+        }
+    }
+    &__link {
+        text-decoration: underline;
+        text-align: center;
+        font-size: 1.35rem;
+        color: colors.$main-clr;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .fa-chevron-right {
+        color: colors.$dark-1000;
+        transition: transform 100ms ease;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="../assets/sass-icon.webp" />
+        <script src="https://kit.fontawesome.com/753d009a2f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../scss/header.scss" />
+        <link rel="stylesheet" href="../scss/aside.scss">
+        <link rel="stylesheet" href="../scss/app.scss">
+        <script defer src="../scripts/app.js"></script>
+        <title>About SASS</title>
+    </head>
+    <body>
+        <nav class="navigation">
+            <header>
+                <a href="/"
+                    ><img
+                        title="Syntactically Awesome Style Sheets"
+                        class="navigation__logo"
+                        src="../assets/sass.png"
+                        alt="SASS logo"
+                /></a>
+            </header>
+            <h1 name="sass-language" class="navigation__title">
+                <span class="navigation__indent">S</span>yntactically <span class="navigation__indent">A</span>wesome
+                <span class="navigation__indent">S</span>tyle <span class="navigation__indent">S</span>heets
+            </h1>
+            <input id="navigation__checkbox" aria-hidden="true" type="checkbox" />
+            <label aria-label="navigation-button" class="navigation__menu" for="navigation__checkbox">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </nav>
+        <main class="welcome-page">
+                <article class="welcome-content">
+                    <header>
+                        <h1 class="welcome-content__title">Overview of SASS</h1>
+                        <h2 class="welcome-content__subtitle">SASS is so powerful with supporting so many useful features which we can use </h2>
+                    </header>
+                </article>
+            <aside class="aside-nav">
+                <ul class="aside-nav__list">
+                    <li>
+                        <button class="aside-nav__header-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            About SASS
+                        </button>
+                        <ul class="aside-nav__list aside-nav__list_expand">
+                            <li class="aside-nav__item">
+                                <a href="/" class="aside-nav__link">Overview</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">SASS vs SCSS Syntax</a>
+                            </li>
+                            <li>
+                                <a href="#" class="aside-nav__link">Useful features of SASS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="aside-nav__header-btn"><i class="fa-solid fa-chevron-right"></i> Compiling SASS to CSS</button>
+                        <ul class="aside-nav__list aside-nav__list_expand">
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Why we need compile SASS code</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Methods to compile SASS</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="aside-nav__header-btn" ><i class="fa-solid fa-chevron-right"></i> Variables</button>
+                        <ul class="aside-nav__list aside-nav__list_expand">
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Global vs local scope</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Flags for declaring variables</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="aside-nav__header-btn"
+                            ><i class="fa-solid fa-chevron-right"></i>Writing selectors with more complex way</
+                        >
+                        <ul class="aside-nav__list aside-nav__list_expand">
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Nesting</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Parent Selector</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </main>
+    </body>
+</html>

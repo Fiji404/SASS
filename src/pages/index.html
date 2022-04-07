@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../scss/styles.scss" />
+        <script src="https://kit.fontawesome.com/753d009a2f.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="../assets/sass-icon.webp" />
+        <script defer src="../scripts/app.js"></script>
+        <script defer type="module">module;</script>
+        <title>SCSS Documentation</title>
+    </head>
+    <body>
+        <nav class="navigation">
+            <header>
+                <a href="/"
+                    ><img
+                        title="Syntactically Awesome Style Sheets"
+                        class="navigation__logo"
+                        src="../assets/sass.png"
+                        alt="SASS logo"
+                /></a>
+            </header>
+            <h1 name="sass-language" class="navigation__title">
+                <span class="navigation__indent">S</span>yntactically <span class="navigation__indent">A</span>wesome
+                <span class="navigation__indent">S</span>tyle <span class="navigation__indent">S</span>heets
+            </h1>
+            <input id="navigation__checkbox" aria-hidden="true" type="checkbox" />
+            <label aria-label="navigation-button" class="navigation__menu" for="navigation__checkbox">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </nav>
+        <main class="welcome-page">
+            <article class="welcome-content">
+                <header>
+                    <h1 class="welcome-content__title">SASS is preprocessor for CSS</h1>
+                    <h2 class="welcome-content__subtitle">Which allow writing less code in more condense way</h2>
+                </header>
+                <section class="code-workspaces">
+                    <section class="code-workspace">
+                        <header class="code-workspace__header">
+                            <span class="code-workspace__controls"><i class="fa-solid fa-angle-left"></i></span>
+                            <h1 class="code-workspace__title">CSS Code</h1>
+                            <span class="code-workspace__controls"><i class="fa-solid fa-angle-right"></i></span>
+                        </header>
+                        <pre class="code-block">
+                            <code class="code-block__code">
+                                    <h2 class="code-block__header">Child Selecting</h2>
+    <span class="code-block__code_selector">.parent</span> {
+        <span class="code-block__code_line"><span class="code-block__code_property">display</span>: flex;</span>
+        <span class="code-block__code_property">justify-content</span>: center;
+        <span class="code-block__code_property">align-items</span>: center;
+        <span class="code-block__code_property">padding</span>: <span class="code-block__code_value">1.2em</span>;
+    }
+
+    <span class="code-block__code_selector">.parent</span> <span class="code-block__code_selector">.child</span> {
+        <span class="code-block__code_property">align-self</span>: flex-start;
+    }
+                           
+    <span class="code-block__code_selector">.child</span> <span style="color:rgb(189, 133, 199)">button</span> {
+        <span class="code-block__code_property">padding</span>: <span class="code-block__code_value">1.1em</span> <span class="code-block__code_value">2.2em</span>;
+    }
+
+</code></pre>
+                    </section>
+                    <section class="code-workspace">
+                        <header class="code-workspace__header">
+                            <span class="code-workspace__controls"><i class="fa-solid fa-angle-left"></i></span>
+                            <h1 class="code-workspace__title code-workspace__title_sass">SASS Code</h1>
+                            <span class="code-workspace__controls"><i class="fa-solid fa-angle-right"></i></span>
+                        </header>
+                        <pre class="code-block">
+                            <code class="code-block__code">
+                                    <h2 class="code-block__header">Nesting Feature</h2>
+    <span class="code-block__code_selector">.parent</span> {
+        <span class="code-block__code_line"><span class="code-block__code_property">display</span>: flex;</span>
+        <span class="code-block__code_property">justify-content</span>: center;
+        <span class="code-block__code_property">align-items</span>: center;
+        <span class="code-block__code_property">padding</span>: <span class="code-block__code_value">1.2em</span>;
+        <span class="code-block__code_selector">.child</span> {
+            <span class="code-block__code_property">align-self</span>: flex-start;
+            <span style="color:rgb(202, 137, 212)">button</span> {
+                <span class="code-block__code_property">padding</span>: <span class="code-block__code_value">1.1em 2.2em</span>;
+        }
+    }
+
+</code></pre>
+                    </section>
+                </div>
+                </section>
+            </article>
+            <aside class="aside-nav">
+                <ul class="aside-nav__list">
+                    <li>
+                        <button class="aside-nav__header-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            About SASS</button>
+                        <ul class="aside-nav__list aside-nav__list_expand">
+                            <li class="aside-nav__item">
+                                <a href="overview.html" class="aside-nav__link">Overview</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">SASS vs SCSS Syntax</a>
+                            </li>
+                            <li>
+                                <a href="#" class="aside-nav__link">Useful features of SASS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="aside-nav__header-btn"><i class="fa-solid fa-chevron-right"></i> Compiling SASS to CSS</button>
+                        <ul class="aside-nav__list aside-nav__list_expand">
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Why we need compile SASS code</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Methods to compile SASS</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="aside-nav__header-btn"><i class="fa-solid fa-chevron-right"></i> Variables</button>
+                        <ul class="aside-nav__list aside-nav__list_expand">
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Global vs local scope</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Flags for declaring variables</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="aside-nav__header-btn" href="#"><i class="fa-solid fa-chevron-right"></i>Writing selectors with more complex way </button>
+                        <ul class="aside-nav__list aside-nav__list_expand">
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Nesting</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link">Parent Selector</a>
+                            </li>
+                            <li class="aside-nav__item">
+                                <a href="#" class="aside-nav__link"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </main>
+    </body>
+</html>

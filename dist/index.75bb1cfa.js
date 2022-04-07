@@ -1,0 +1,2 @@
+const menuBtn=document.querySelector(".navigation__menu"),menuNav=document.querySelector(".aside-nav"),hiddenMenu=document.querySelector(".aside-nav__list_expand"),menuHeader=document.querySelector(".aside-nav__header-btn");menuBtn.addEventListener("click",(()=>{menuNav.classList.toggle("active")})),menuHeader.addEventListener("click",(()=>{menuHeader.classList.toggle("active"),hiddenMenu.classList.toggle("show")}));
+//# sourceMappingURL=index.75bb1cfa.js.map
