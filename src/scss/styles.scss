@@ -30,7 +30,7 @@
         &__subtitle {
             font-size: 1.5rem;
             text-align: center;
-            color: rgba(colors.$main-clr, .75)
+            color: rgba(colors.$main-clr, .75);
         }
         .code-workspaces {
             display: grid;
@@ -50,12 +50,18 @@
                 min-height: 420px;
                 display: flex;
                 flex-direction: column;
+                &__list-item {
+                    list-style: none
+                }
                 ::selection {
                     background-color: colors.$dark-200;
                 }
                 .code-block {
                     flex-grow: 1;
                     overflow-x: auto;
+                    &.hidden {
+                        display: none;
+                    }
                     &::selection {
                         background-color: #fff;
                         color: #000

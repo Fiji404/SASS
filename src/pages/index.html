@@ -44,25 +44,48 @@
                             <h1 class="code-workspace__title">CSS Code</h1>
                             <span class="code-workspace__controls"><i class="fa-solid fa-angle-right"></i></span>
                         </header>
-                        <pre class="code-block">
-                            <code class="code-block__code">
-                                    <h2 class="code-block__header">Child Selecting</h2>
+                        <ul class="code-workspace__list">
+<li class="code-workspace__list-item">
+    <pre class="code-block">
+    <code class="code-block__code">
+        <h2 class="code-block__header">Child Selecting</h2>
     <span class="code-block__code_selector">.parent</span> {
         <span class="code-block__code_line"><span class="code-block__code_property">display</span>: flex;</span>
         <span class="code-block__code_property">justify-content</span>: center;
         <span class="code-block__code_property">align-items</span>: center;
         <span class="code-block__code_property">padding</span>: <span class="code-block__code_value">1.2em</span>;
     }
-
+    
     <span class="code-block__code_selector">.parent</span> <span class="code-block__code_selector">.child</span> {
         <span class="code-block__code_property">align-self</span>: flex-start;
     }
-                           
+    
     <span class="code-block__code_selector">.child</span> <span style="color:rgb(189, 133, 199)">button</span> {
         <span class="code-block__code_property">padding</span>: <span class="code-block__code_value">1.1em</span> <span class="code-block__code_value">2.2em</span>;
     }
-
+    
 </code></pre>
+</li>
+                                <li class="code-workspace__list-item">
+                                    <pre class="code-block hidden">
+                                        <code class="code-block__code">
+                                                <h2 class="code-block__header">Child Selecting</h2>
+                                    <span class="code-block__code_selector">.parent</span> {
+                                    <span class="code-block__code_line"><span class="code-block__code_property">display</span>: flex;</span>
+                                    <span class="code-block__code_property">justify-content</span>: center;
+                                    <span class="code-block__code_property">align-items</span>: center;
+                                    <span class="code-block__code_property">padding</span>: <span class="code-block__code_value">1.2em</span>;
+                                    }
+                                    <span class="code-block__code_selector">.parent</span> <span class="code-block__code_selector">.child</span> {
+                                    <span class="code-block__code_property">align-self</span>: flex-start;
+                                    }
+                                        
+                                                        <span class="code-block__code_selector">.child</span> <span style="color:rgb(189, 133, 199)">button</span> {
+                                                        <span class="code-block__code_property">padding</span>: <span class="code-block__code_value">1.1em</span> <span class="code-block__code_value">2.2em</span>;
+                                                        }
+                                    </code></pre>
+                                </li>
+                        </ul>
                     </section>
                     <section class="code-workspace">
                         <header class="code-workspace__header">
@@ -70,9 +93,11 @@
                             <h1 class="code-workspace__title code-workspace__title_sass">SASS Code</h1>
                             <span class="code-workspace__controls"><i class="fa-solid fa-angle-right"></i></span>
                         </header>
-                        <pre class="code-block">
-                            <code class="code-block__code">
-                                    <h2 class="code-block__header">Nesting Feature</h2>
+                        <ul class="code-workspace__list">
+                            <li class="code-workspace__list-item">
+<pre class="code-block">
+        <code class="code-block__code">
+<h2 class="code-block__header">Nesting Feature</h2>
     <span class="code-block__code_selector">.parent</span> {
         <span class="code-block__code_line"><span class="code-block__code_property">display</span>: flex;</span>
         <span class="code-block__code_property">justify-content</span>: center;
@@ -82,10 +107,13 @@
             <span class="code-block__code_property">align-self</span>: flex-start;
             <span style="color:rgb(202, 137, 212)">button</span> {
                 <span class="code-block__code_property">padding</span>: <span class="code-block__code_value">1.1em 2.2em</span>;
+            }
         }
     }
-
-</code></pre>
+                                
+                                </code></pre>
+                            </li>
+                        </ul>
                     </section>
                 </div>
                 </section>
@@ -98,7 +126,7 @@
                             About SASS</button>
                         <ul class="aside-nav__list aside-nav__list_expand">
                             <li class="aside-nav__item">
-                                <a href="overview.html" class="aside-nav__link">Overview</a>
+                                <a href="overview.html" class="aside-nav__link">Overview of SASS</a>
                             </li>
                             <li class="aside-nav__item">
                                 <a href="#" class="aside-nav__link">SASS vs SCSS Syntax</a>
@@ -117,9 +145,6 @@
                             <li class="aside-nav__item">
                                 <a href="#" class="aside-nav__link">Methods to compile SASS</a>
                             </li>
-                            <li class="aside-nav__item">
-                                <a href="#" class="aside-nav__link">3</a>
-                            </li>
                         </ul>
                     </li>
                     <li>
@@ -137,7 +162,7 @@
                         </ul>
                     </li>
                     <li>
-                        <button class="aside-nav__header-btn" href="#"><i class="fa-solid fa-chevron-right"></i>Writing selectors with more complex way </button>
+                        <button class="aside-nav__header-btn" href="#"><i class="fa-solid fa-chevron-right"></i>Type of selectors </button>
                         <ul class="aside-nav__list aside-nav__list_expand">
                             <li class="aside-nav__item">
                                 <a href="#" class="aside-nav__link">Nesting</a>
